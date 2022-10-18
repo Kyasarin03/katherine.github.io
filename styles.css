@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@font-face {
+    font-family: 'ElectronicArtsDisplay';
+    src: url(/assets/fonts/display/ElectronicArtsDisplay-Regular.woff2) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsDisplay';
+    src: url(/assets/fonts/display/ElectronicArtsDisplay-Bold.woff2) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Light.woff2) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-LightItalic.woff2) format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Regular.woff2) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Italic.woff2) format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-Bold.woff2) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/text/ElectronicArtsText-BoldItalic.woff2) format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    text-decoration: none;
+}
+.cls-1 {
+    fill:none;
+}
+.cls-2 {
+    clip-path:url(#clippath);
+}
+/* buat 3 titik */
+.showLeft {
+    background-color: white !important;
+    border: 1px solid white !important;
+    text-shadow: white !important;
+    color: black !important;
+    padding: 5px;
+}
+.icons li {
+    background: none repeat scroll 0 0 black;
+    height: 7px;
+    width: 7px;
+    line-height: 0;
+    list-style: none outside none;
+    margin-top: 3px;
+    vertical-align: top;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.btn-left {
+    left: 0.4em;
+}
+.btn-right {
+    right: 0.4em;
+} 
+.btn-left,.btn-right {
+    position: absolute;
+    top: 3.0em;
+}
+.dropbtn1 {
+    background-color: #000000;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown1 {
+    position: absolute;
+    display: inline-block;
+    left: 0.1em;
+    top: 0.4em;
+}
+.dropdown1-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+.show {
+    display: block;
+}
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial;
+}
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.navbarlogo {
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+  /* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin: 3px 20px;
+}
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+  /* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: red;
+}
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  /* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.tambahan {
+    margin: 18px 20px;
+    color: black;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+.tambahan:hover {
+    color: red;
+}
+.gambar1 {
+    width: 100%;
+}
+.gambarlogo1 {
+    position: absolute;
+    top: 47%;
+    left: 38%;
+    transform: translate(-50%,-50%);
+    font-size: 50%;
+}
+.textgambar1 {
+    color: white;
+    position: absolute;
+    top: 62%;
+    font-size:20px;
+    left: 21%;
+    transform: translate(-50%,-50%);
+}
+.play{
+    color:black ;
+    background-color:white;
+    text-decoration:none;
+    padding: 10px 20px;
+    border-radius:3px;
+    top: 72%;
+    left:140px;
+    font-size:20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.play:hover {
+    padding: 12px 22px 12px 22px;
+}
+.gambar2 {
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+.textgambar2 {
+    color: white;
+    position: absolute;
+    top: 108%;
+    font-size:25px;
+    font-weight: bold;
+    left: 28%;
+    transform: translate(-50%,-50%);
+}
+.logo2 {
+    color: white;
+    width: 50%;
+    top: 105%;
+    right: -100px;
+    position: absolute;
+}
+.find {
+    color:black ;
+    background-color:white;
+    text-decoration:none;
+    padding: 10px 20px;
+    border-radius:3px;
+    top: 109%;
+    right:20px;
+    font-size:20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.find:hover {
+    padding: 12px 22px 12px 22px;
+}
+.featured {
+    width: 100%;
+    padding-top: 100px;
+}
+/* .featured:hover {
+
+} */
+.gambar3, .gambar4, .gambar5, .gambar6, .gambar7, .gambar8{
+    width: 30%;
+    padding: 10px;
+}
+.gambar3, .gambar4, .gambar5 {
+    margin-top: 20px;
+}
+.gambar3, .gambar6 {
+    margin-left: 65px;
+}
+.gambar3:hover {
+    background-image: url("img/featuredhover.jpg");
+    opacity: 0.5;
+}
+.gambar4:hover {
+    background-image: url("img/featuredhover.jpg");
+    opacity: 0.5;
+}
+.gambar5:hover {
+    background-image: url("img/featuredhover.jpg");
+    opacity: 0.5;
+}
+.gambar6:hover {
+    background-image: url("img/featuredhover.jpg");
+    opacity: 0.5;
+}
+.gambar7:hover {
+    background-image: url("img/featuredhover.jpg");
+    opacity: 0.5;
+}
+.gambar8:hover {
+    background-image: url("img/featuredhover.jpg");
+    opacity: 0.5;
+}
+h1 {
+    text-align: center;
+    font-size: 250%;
+    padding-top: 25px;
+}
+.latestgames {
+    color:black ;
+    background-color:white;
+    text-decoration:none;
+    padding: 10px 20px;
+    border: solid;
+    border-radius:3px;
+    top: 263%;
+    left:50%;
+    font-size:20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.latestgames:hover {
+    padding: 12px 22px 12px 22px;
+}
+.ddnews h1 {
+    margin-top:60px;
+    text-align:center;
+}
+.read {
+    color:black ;
+    background-color:white;
+    text-decoration:none;
+    padding: 10px 20px;
+    border: solid;
+    border-radius:3px;
+    top: 283%;
+    left:50%;
+    font-size:20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.read:hover {
+    padding: 12px 22px 12px 22px;
+}
+.beforefooter {
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    background-image: url("img/content10.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+.content9 {
+    width: 100%;
+} 
+.isicontent9 {
+    color: white;
+    position: absolute;
+    top: 325%;
+    font-size:20px;
+    left: 29%;
+    transform: translate(-50%,-50%);
+}
+.join {
+    color:white ;
+    text-decoration:none;
+    padding: 10px 20px;
+    border: solid;
+    border-radius:3px;
+    top: 350%;
+    left:13%;
+    transform: translate(-50%,-50%);
+    font-size:20px;
+    position: absolute;
+}
+.join:hover {
+    padding: 12px 22px 12px 22px;
+}
+.textcontent10 {
+    color: black;
+    position: absolute;
+    top: 380%;
+    font-size:25px;
+    font-weight: bold;
+    left: 28%;
+    transform: translate(-50%,-50%);
+}
+.learn {
+    color:black ;
+    text-decoration:none;
+    padding: 10px 20px;
+    border: solid;
+    border-radius:3px;
+    top: 380%;
+    left:85%;
+    transform: translate(-50%,-50%);
+    font-size:20px;
+    position: absolute;
+}
+.learn:hover {
+    padding: 12px 22px 12px 22px;
+}
+.dibawah {
+    background-color: rgb(223, 223, 223);
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-bottom: 100px;
+}
+.isidibawah {
+    margin: 18px 20px;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+}
+.isidibawah:hover {
+    color: red;
+}
+.isidisamping {
+    float: right;
+    padding-right: 100px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.icon {
+    float: left;
+    padding: 20px;
+    padding-left: 925px;
+}
+.footer {
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-right: 400px;
+}
+.footer1 {
+    padding: 10px;
+    padding-left: 60px;
+}
+.last a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.last {
+    margin-left: 150px;
+    margin-right:100px;
+    display: block;
+    text-align: left;
+    float: left;
+}
